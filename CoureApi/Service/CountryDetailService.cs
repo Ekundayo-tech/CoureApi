@@ -64,7 +64,7 @@ namespace CoureApi.Service
             if (get != null && details != null)
             {
 
-                foreach (var m in details)
+                foreach (var m in details.ToList())
                 {
 
                     res = new GetResponse
@@ -80,19 +80,15 @@ namespace CoureApi.Service
                         },
                         GetCountryDetails = new List<GetCountryDetails>
                         {
-
                             new GetCountryDetails
                             {
                                 Operator = details.FirstOrDefault(x => x.Id == m.Id).Opeartor,
                                 OperatorCode = details.FirstOrDefault(x => x.Id == m.Id).OperatorCode,
                             },
                         }.ToList()
-
                     };
                 }
-                 
             }
-
             return res;
         }
     }
