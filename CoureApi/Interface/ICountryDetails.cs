@@ -11,7 +11,7 @@ namespace CoureApi.Interface
     {
         CountryDetailDto AddUpdate(CountryDetailsModel model);
         //bool Delete(int Id);
-        List<GetResponse> Get(string PhoneNumber); 
+        GetResponse Get(string PhoneNumber); 
  
     }
 }

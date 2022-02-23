@@ -9,7 +9,7 @@ namespace CoureApi.Model
     { 
         public string Number { get; set; }
         public GetCountry GetCountry { get; set; }
-        public GetCountryDetails GetCountryDetails { get; set; }
+        public List<GetCountryDetails> GetCountryDetails { get; set; }
     }
     public class GetCountry
     {
