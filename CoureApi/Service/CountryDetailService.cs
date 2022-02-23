@@ -83,14 +83,14 @@ namespace CoureApi.Service
 
                             new GetCountryDetails
                             {
-                                Operator = m.OperatorCode,
-                                OperatorCode = m.OperatorCode,
+                                Operator = details.FirstOrDefault(x => x.Id == m.Id).Opeartor,
+                                OperatorCode = details.FirstOrDefault(x => x.Id == m.Id).OperatorCode,
                             },
                         }.ToList()
 
                     };
                 }
-
+                 
             }
 
             return res;
