@@ -11,13 +11,13 @@ namespace CoureApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class CoureController : ControllerBase
     {
         private readonly ICountryDetails _countryDetails;
         private readonly ICountry _country;
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<CoureController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, ICountryDetails countryDetails, ICountry country)
+        public CoureController(ILogger<CoureController> logger, ICountryDetails countryDetails, ICountry country)
         {
             _logger = logger;
             _countryDetails = countryDetails;
