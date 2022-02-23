@@ -19,12 +19,12 @@ namespace CoureApi.Service
 
         public CountryDto AddUpdate(CountryModel model)
         {
-            var request = _context.Country.FirstOrDefault(x => x.Id == model.Id);
+            var request = _context.Country.FirstOrDefault(x => x.Name == model.Name);
             if(request == null)
             {
                 request = new Country()
                 {
-                    Id = model.Id,
+                    //Id = model.Id,
                     CountryCode = model.CountryCode,
                     CountryIso = model.CountryIso,
                     Name = model.Name
