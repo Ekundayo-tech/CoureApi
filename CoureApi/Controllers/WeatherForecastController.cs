@@ -29,7 +29,7 @@ namespace CoureApi.Controllers
         {
             var res = _countryDetails.Get(PhoneNumber);
             return Ok(res);
-        } 
+        }  
         [HttpPost("Details")]
         public IActionResult AddDetails(CountryDetailsModel model)
         {
@@ -42,5 +42,17 @@ namespace CoureApi.Controllers
             var res = _country.AddUpdate(model);
             return Ok(res);
         }
+        //[HttpDelete]
+        //public IActionResult DeleteCountry(int Id)
+        //{
+        //    var res = _country.Delete(Id);
+        //    return Ok(res);
+        //}
+        //[HttpDelete("Details")]
+        //public IActionResult DelCountryDetails(int Id)
+        //{
+        //    var res = _country.Delete(Id);
+        //    return Ok(res);
+        //}
     }
 }

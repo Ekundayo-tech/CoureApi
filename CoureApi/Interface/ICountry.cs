@@ -10,6 +10,7 @@ namespace CoureApi.Interface
     public interface ICountry
     {
         CountryDto AddUpdate(CountryModel model);
+        //bool Delete(int Id);
         CountryDto Get(string PhoneNumber);
     }
 }

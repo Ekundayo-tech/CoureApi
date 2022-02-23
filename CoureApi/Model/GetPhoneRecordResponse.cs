@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CoureApi.Model
 {
-    public class GetResponse
+    public class GetResponse 
     { 
         public string Number { get; set; }
         public GetCountry GetCountry { get; set; }

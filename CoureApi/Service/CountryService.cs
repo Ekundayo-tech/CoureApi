@@ -41,6 +41,18 @@ namespace CoureApi.Service
             return new CountryDto { Id = request.Id, Name = request.Name, CountryCode = request.CountryCode, CountryIso = request.CountryIso };
         }
 
+
+        //public bool Delete(int Id)
+        //{
+        //    var request = _context.CountryDetails.FirstOrDefault(x => x.Id == Id);
+        //    if (request != null)
+        //    {
+        //        _context.CountryDetails.Remove(request);
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
         public CountryDto Get(string PhoneNumber)
         {
             var rse = new CountryDto();
