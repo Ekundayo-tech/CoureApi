@@ -25,7 +25,7 @@ namespace CoureApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetDetail(string PhoneNumber)
+        public IActionResult GetDetails(string PhoneNumber)
         {
             var res = _countryDetails.Get(PhoneNumber);
             return Ok(res);
